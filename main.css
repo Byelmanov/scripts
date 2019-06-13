@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background: #ffffff; 
+    height: 60px; 
+    line-height: 60px;
+    border-bottom: 1px solid #dddddd;
+    display:inline-block; 
+    font-size:12px;
+}
+.hamburger{
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 5px 15px 0px 15px;
+    color: #999;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+}
+.cross{
+    background: none;
+    top: 0;
+    right: 0;
+    padding: 7px 15px 0px 15px;
+    color: #999;
+    border: 0;
+    font-size: 3em;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+}
+.menu{
+    z-index: 1;
+    font-weight: bold; 
+    font-size: 0.8em; 
+    width: 100%; 
+    background: #f1f1f1; 
+    background: #fff; 
+    position: fixed;
+    top: 60px;
+    left: 0; 
+    text-align: center; 
+    font-size: 12px;
+}
+.menu ul{
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+}
+.menu li{
+    display: block;   
+    padding: 15px 0 15px 0; 
+    border-bottom: #dddddd 1px solid;
+}
+.menu a:first-child li{
+    border-top: #dddddd 1px solid;
+}
+.menu li:hover{    
+    background: #f1dff4;
+
+}
+.menu a{ 
+    text-decoration: none;  
+    margin: 0px; 
+    color:#666;
+    text-transform: uppercase;
+}
+
+/*Button scroll to the top*/
+
+.button{
+    display: inline-block;
+    position: fixed;
+    left: 100px;
+    top: 500px;
+    border: 2px solid blue;
+    border-radius: 100%;
+    -webkit-transform: rotate(270deg);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: yellow;
+}
+
