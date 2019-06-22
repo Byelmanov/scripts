@@ -34,11 +34,12 @@ $(".button").on("click", function(){
 });
 
 //anchor scroll
-
+// 60 - size of menu
 
 $(".contacts").click(function(){
+    let anchor = $(this).attr("href");
 	$("html, body").animate({
-		scrollTop: $("#test_id").offset().top
+		scrollTop: $(anchor).offset().top - 60
 	}, 500);
 	hideMenu();
 });
