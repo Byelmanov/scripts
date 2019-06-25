@@ -11,7 +11,7 @@ function showMenu(){
 			$( ".hamburger" ).hide();
 			$( ".cross" ).show();
 		});
-}
+};
 
 
 // burger menu
@@ -29,8 +29,20 @@ $(function() {
 
 // button to the top 
 
+$(function(){   
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.button').fadeIn();
+        } else {
+            $('.button').fadeOut();
+        }
+    });
+});
+
 $(".button").on("click", function(){
-    $("html, body").animate({scrollTop: 0}, 500);
+    $("html, body").animate({scrollTop: 0}, 500, function(){
+    	$(".button").fadeOut();
+    });
 });
 
 //anchor scroll

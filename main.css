@@ -89,13 +89,16 @@ header{
 .button{
     position: fixed;
     right: 100px;
-    top: 500px;
+    bottom: 100px;
     border: 2px solid blue;
-    border-radius: 100%;
+    border-radius: 50%;
     -webkit-transform: rotate(270deg);
     width: 30px;
     height: 30px;
     text-align: center;
     background: yellow;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
 }
 
