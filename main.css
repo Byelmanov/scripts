@@ -88,17 +88,24 @@ header{
 
 .button{
     position: fixed;
-    right: 100px;
-    bottom: 100px;
-    border: 2px solid blue;
+    left: 100px;
+    bottom: 150px;
     border-radius: 50%;
-    -webkit-transform: rotate(270deg);
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: yellow;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#f1dff4, #fefcfe);
     display: none;
     z-index: 1;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+.button__text{
+    text-align: center;
+    -webkit-transform: rotate(315deg);
+    font-family: arial;
+    font-size: 20px;
+    margin: 8px;
+}
+
+
 
