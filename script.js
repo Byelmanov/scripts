@@ -64,6 +64,8 @@ $(".single-item").slick({
 	dots: false,
 	arrows: false,
 	draggable: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
 });
 
 // custom prev next buttons
@@ -80,7 +82,6 @@ $(".button_left").click(function () {
 $(".navButtonWrap__item").click(function(){
 	let scrollTo = $(this).text();
 	$('.single-item').slick('slickGoTo', scrollTo);
-	console.log("click on" + scrollTo);
 });
 
 // remove active 
